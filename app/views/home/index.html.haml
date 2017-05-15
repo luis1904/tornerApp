@@ -1,0 +1,301 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    / Custom CSS
+    %link{:href => "/assets/css/main.css", :rel => "stylesheet"}/
+    %link{:href => "/assets/css/fonts.css", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Antic|Anton|Roboto+Condensed", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Lobster+Two", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Inconsolata", :rel => "stylesheet"}/
+  %body
+    .modal
+      .modal-wrap
+        .sus-form
+          .sus-close
+            %i.icon.icon-cancel
+          .form-content
+            .fields
+              %label Nombre
+              %input.field{:type => "text"}/
+              %label Apellidos
+              %input.field{:type => "text"}/
+              %label Correo
+              %input.field{:type => "text"}/
+              %input.sus-btn{:type => "submit", :value => "Suscribirse"}/
+              .info-modal Suscribete para recibir información acerca de nuestros eventos y publicaciones.
+              .social-modal
+                %i
+                  %a.icon.icon-facebook{:href => "#"}
+                %i
+                  %a.icon.icon-twitter{:href => "#"}
+                %i
+                  %a.icon.icon-youtube{:href => "#"}
+    %header#header
+      .cover_main
+        .slogan
+          %span solo
+          %span futuros
+          %span profesionales
+
+      .overlay
+      %nav
+        .logo
+          %h2 TORNER
+        .items
+          .toggle
+            %i.icon.icon-menu3
+          .close
+            %i.icon.icon-close
+          .tabs
+            %li
+              %a.hide.item{:href => "#about"} acerca de
+            %li
+              %a.hide.item{:href => "#pub"} publicaciones
+            %li
+              %a.hide.item{:href => "#equipo"} docentes
+            %li
+              %a.hide.item{:href => "#"} contacto
+          .suscribete.item.hide REGISTRATE
+      .main-title DIRECCIÓN DE TRANSFERENCIA E INNOVACIÓN
+      .span
+        -# %img.scroll{:src => "/assets/scroll-icon.png", :width => "60"}/
+    -# %section#about.about-section{"data-stellar-background-ratio" => "0.5", "data-stellar-vertical-offset" => "0"}
+    -#   .overlay-about
+    -#   .about-container
+    -#     .about-wrap.show
+    -#       .about-content
+    -#         %h2.mision NUESTRA VISION
+    -#         %p.mision La Dirección de Transferencia e Innovación (DTI) es un órgano dependiente del Vicerrectorado de Investigación, encargada de promover y gestionar relaciones e interacciones entre la UNHEVAL y su entorno, particularmente, el sector empresarial, en el área de la investigación e innovación tecnológica. Específicamente está encargada de transferir los resultados de los trabajos de investigación y prestaciones de servicios con entidades públicas y privadas; organizar información para empresas; publicaciones; proteger la propiedad intelectual y el registro de patentes.
+    -#     .about-wrap
+    -#       .about-content
+    -#         %h2.vision NUESTRA MISION
+    -#         %p.vision La Dirección de Transferencia e Innovación (DTI) es un órgano dependiente del Vicerrectorado de Investigación, encargada de promover y gestionar relaciones e interacciones entre la UNHEVAL y su entorno, particularmente, el sector empresarial, en el área de la investigación e innovación tecnológica. Específicamente está encargada de transferir los resultados de los trabajos de investigación y prestaciones de servicios con entidades públicas y privadas; organizar información para empresas; publicaciones; proteger la propiedad intelectual y el registro de patentes.
+    -#     .about-wrap
+    -#       .about-content
+    -#         %h2.valores NUESTROS VALORES
+    -#         %p.valores La Dirección de Transferencia e Innovación (DTI) es un órgano dependiente del Vicerrectorado de Investigación, encargada de promover y gestionar relaciones e interacciones entre la UNHEVAL y su entorno, particularmente, el sector empresarial, en el área de la investigación e innovación tecnológica. Específicamente está encargada de transferir los resultados de los trabajos de investigación y prestaciones de servicios con entidades públicas y privadas; organizar información para empresas; publicaciones; proteger la propiedad intelectual y el registro de patentes.
+    -#     .about-wrap
+    -#       .about-content
+    -#         %h2.proposito NUESTRO PROPOSITO
+    -#         %p.proposito La Dirección de Transferencia e Innovación (DTI) es un órgano dependiente del Vicerrectorado de Investigación, encargada de promover y gestionar relaciones e interacciones entre la UNHEVAL y su entorno, particularmente, el sector empresarial, en el área de la investigación e innovación tecnológica. Específicamente está encargada de transferir los resultados de los trabajos de investigación y prestaciones de servicios con entidades públicas y privadas; organizar información para empresas; publicaciones; proteger la propiedad intelectual y el registro de patentes.
+    -# .wrap-slide
+    -#   %span
+    -#     .msg-btn
+    -#       .shape.show
+    -#         .bubble.bubble-mision vision
+    -#         .tip
+    -#       .slide-button
+    -#     .msg-btn
+    -#       .shape
+    -#         .bubble.bubble-vision mision
+    -#         .tip
+    -#       .slide-button
+    -#     .msg-btn
+    -#       .shape
+    -#         .bubble.bubble-valores valores
+    -#         .tip
+    -#       .slide-button
+    -#     .msg-btn
+    -#       .shape
+    -#         .bubble.bubble-proposito proposito
+    -#         .tip
+    -#       .slide-button
+    %section#areas.areas-section
+      .area.a1
+        .hover-area
+        %i
+        %p Academia preuniversitaria torner
+        %br/
+        %span conócenos
+      .area.a2
+        .hover-area
+        %i
+        %p Academia preuniversitaria san fernando
+        %span conócenos
+      .area.a3
+        .hover-area
+        %i
+        %p Academia preuniversitaria don quijote de la mancha
+        %span conócenos
+
+
+    %section#numeros.numeros-section{"data-stellar-background-ratio" => "0.5"}
+      .overlay-numeros
+      .dark-bg
+      .numeros-wrap
+        .numero
+          %i.icon.icon-happy
+          %h2
+            %span.count 50
+          %p Convenios
+        .numero
+          %i.icon.icon-presentation
+          %h2
+            %span.count 40
+          %p Proyectos
+        .numero
+          %i.icon.icon-flag
+          %h2
+            %span.count 20
+          %p Objetivos Logrados
+        .numero
+          %i.icon.icon-hourglass
+          %h2
+            %span.count 30
+          %p Años de Experiencia
+    %section#pub.pub-section
+      .overlay-pub
+      .title-pub
+        %h2 Publicaciones
+      .pub-container
+        .move-right
+          %span.icon.icon-arrow-left
+        .pub-wrap
+          .pub-move
+            .pub-content
+              %img{:src => "/assets/pub_img1.jpg", :width => "100%"}/
+              .pub-body
+                .pub-title Publicacion 1
+                .pub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam minus aliquid quia, quaerat quisquam, officia eveniet fugiat vero praesentium tempora numquam accusantium quos sint perferendis, odit cupiditate possimus nobis.
+            .pub-content
+              %img{:src => "/assets/pub_img2.jpg", :width => "100%"}/
+              .pub-body
+                .pub-title Publicacion 2
+                .pub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam minus aliquid quia, quaerat quisquam, officia eveniet fugiat vero praesentium tempora numquam accusantium quos sint perferendis, odit cupiditate possimus nobis.
+            .pub-content
+              %img{:src => "/assets/pub_img3.jpg", :width => "100%"}/
+              .pub-body
+                .pub-title Publicacion 3
+                .pub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam minus aliquid quia, quaerat quisquam, officia eveniet fugiat vero praesentium tempora numquam accusantium quos sint perferendis, odit cupiditate possimus nobis.
+            .pub-content
+              %img{:src => "/assets/pub_img1.jpg", :width => "100%"}/
+              .pub-body
+                .pub-title Publicacion 4
+                .pub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam minus aliquid quia, quaerat quisquam, officia eveniet fugiat vero praesentium tempora numquam accusantium quos sint perferendis, odit cupiditate possimus nobis.
+            .pub-content
+              %img{:src => "/assets/pub_img2.jpg", :width => "100%"}/
+              .pub-body
+                .pub-title Publicacion 5
+                .pub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam minus aliquid quia, quaerat quisquam, officia eveniet fugiat vero praesentium tempora numquam accusantium quos sint perferendis, odit cupiditate possimus nobis.
+            .pub-content
+              %img{:src => "/assets/pub_img3.jpg", :width => "100%"}/
+              .pub-body
+                .pub-title Publicacion 6
+                .pub-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam minus aliquid quia, quaerat quisquam, officia eveniet fugiat vero praesentium tempora numquam accusantium quos sint perferendis, odit cupiditate possimus nobis.
+        .move-left
+          %span.icon.icon-arrow-right
+      .btn_pub
+        %span ver todas
+    %section#equipo.equipo-section
+      .equipo-wrap
+        %h2 CONOCE A NUESTRO EQUIPO
+        .miembros
+          .miembro
+            .img-profile
+              %img{:src => "/assets/profile1.jpg"}/
+              .semi-circulo.color1
+            %b Sin Nombre
+            %span Docente
+          .miembro
+            .img-profile
+              %img{:src => "/assets/profile2.jpg"}/
+              .semi-circulo.color2
+            %b Sin Nombre
+            %span Docente
+          .miembro
+            .img-profile
+              %img{:src => "/assets/profile3.jpg"}/
+              .semi-circulo.color3
+            %b Sin Nombre
+            %span Docente
+          .miembro
+            .img-profile
+              %img{:src => "/assets/profile4.jpg"}/
+              .semi-circulo.color4
+            %b Sin Nombre
+            %span Docente
+          .miembro
+            .img-profile
+              %img{:src => "/assets/profile5.jpg"}/
+              .semi-circulo.color5
+            %b Sin Nombre
+            %span Docente
+          .miembro
+            .img-profile
+              %img{:src => "/assets/profile1.jpg"}/
+              .semi-circulo.color6
+            %b Sin Nombre
+            %span Docente
+    %section#eventos.eventos-section
+      .overlay-evento
+      .title-eventos
+        %h2 Nuestros Cursos
+      .eventos-wrap
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #1
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #2
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #3
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #4
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #5
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #6
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #7
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #8
+        .evento-content
+          %img{:src => "/assets/pub_img2.jpg", :width => "250"}/
+          %p Curso #9
+    %section.socios-section
+      .socios-wrap
+        %img{:src => "/assets/socio1.png"}/
+        %img{:src => "/assets/socio2.png"}/
+        %img{:src => "/assets/socio3.png"}/
+    %section.footer-section{"data-stellar-background-ratio" => "0.5", "data-stellar-vertical-offset" => "0"}
+      .dark-footer
+      .overlay-footer
+      .footer-wrap
+        .contact
+          .social-icon
+            %i
+              %a.icon.icon-facebook{:href => "#"}
+            %i
+              %a.icon.icon-twitter{:href => "#"}
+            %i
+              %a.icon.icon-youtube{:href => "#"}
+          .phone
+            %b> Teléfono:
+            (062) - 32423423
+          .mail
+            %b> Correo:
+            email@gmail.com
+        .question
+          %p ¿Alguna Consulta?
+          .form-consulta
+            %input.field-q{:placeholder => "Email", :type => "text"}/
+            %input.field-q{:placeholder => "Asunto", :type => "text"}/
+            %textarea.consulta{:placeholder => "Mensaje"}
+            %input.btn-q{:type => "submit", :value => "Enviar"}/
+        -# .other
+        -#   .logo-unheval
+        -#     %img{:src => "/assets/logo-unheval.png"}/
+    %script{:src => "https://code.jquery.com/jquery-2.1.1.min.js", :type => "text/javascript"}
+    %script{:src => "assets\\js\\jquery.stellar.js", :type => "text/javascript"}
+    %script{:src => "/assets/js/app.js", :type => "text/javascript"}
